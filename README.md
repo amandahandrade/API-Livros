@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Api de Doação de Livros VnW
 
 Esta é uma API simples desenvolvida com Flask e QELite, criada para fins educacionais na escola Vai na Web. Ela permite o cadastro e a listagem de livros doados.
@@ -63,4 +64,3 @@ O endpoint /livros retorna todos os livros cadastrados na API.
     "image_url":"https://exemplo.com"
 }
 ```
-
