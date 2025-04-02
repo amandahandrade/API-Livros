@@ -6,6 +6,7 @@ app = Flask(__name__)
 
 CORS(app)
 
+
 @app.route("/")
 def oAlho():
 
@@ -75,10 +76,12 @@ def listar_livros():
                 "image_url": item[4]
             }
             livros_formatados.append(dicionario_livros)
-            
-            jsonify = json.dumps(livros_formatados, sort_keys=False, ensure_ascii=False)
 
-    return jsonify, 200, {'Content-Type': 'application/json'}
+    return app.response_class(
+        response=json.dumps(livros_formatados, ensure_ascii=False, sort_keys=False),
+        status=200,
+        mimetype='application/json'
+    )
 
 
 if __name__ == "__main__":
