@@ -6,7 +6,7 @@ Esta é uma API simples desenvolvida com Flask e SQLite, criada para fins educac
 
 1. Faça o clone do repositório
 ```bash
-git clone <link do repositório>
+git clone link do repositório
 cd nome-do-projeto
 ```
 
